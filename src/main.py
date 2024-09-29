@@ -111,7 +111,7 @@ def get_message_word(sender):
 
 def move_monkey(sender, word):
     counter = 0
-    beach_x = city_label.winfo_x()
+    destination_x = city_label.winfo_x()
 
     # Create a monkey
     monkey_label = tk.Label(text="🐵")
@@ -126,10 +126,10 @@ def move_monkey(sender, word):
     window.update_idletasks()
 
     # Calculate step size
-    step_size = (beach_x - monkey_pos_x) // 100
+    step_size = (destination_x - monkey_pos_x) // 100
 
     def move():
-        nonlocal monkey_pos_x, beach_x, counter, sender, word
+        nonlocal monkey_pos_x, destination_x, counter, sender, word
 
         swim_sound.play()
 
