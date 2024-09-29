@@ -69,7 +69,7 @@ def main():
     island_label.pack(side="left")
     city_label.pack(side="right")
 
-    # Buttons for Ernesti to send a monkey
+    # Button for Ernesti to send a monkey
     ernesti_button = tk.Button(
         window,
         text="Ernesti lähettää apinan",
